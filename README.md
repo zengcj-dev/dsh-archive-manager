@@ -16,7 +16,7 @@ DSH 0.1.1-rc.2 的"归档会话"是单向设计：右键会话只能归档，官
 发布到 GitHub 后：
 
 ```bash
-dsh plugin --profile web add git+https://github.com/<your-name>/dsh-archive-manager.git
+dsh plugin --profile web add git+https://github.com/zengcj-dev/dsh-archive-manager.git
 ```
 
 本地路径 / tarball 安装：
