@@ -1,0 +1,6 @@
+# dsh-archive-manager bundle patch: mounts the plugin into a profile's layer
+# stack. The server entry registers two same-origin routes; the client entry
+# adds an "归档会话" section under Settings.
+- insert:
+    - id: dsh-archive-manager
+      name: 'dsh-archive-manager'

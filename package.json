@@ -1,0 +1,37 @@
+{
+  "name": "dsh-archive-manager",
+  "version": "0.1.0",
+  "description": "归档会话管理器：在设置页查看已归档会话并一键恢复（DeepSeek Harness 0.1.1-rc.2）。",
+  "type": "module",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.6"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "archive",
+    "session"
+  ],
+  "dependencies": {},
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ],
+      "platform": "web"
+    }
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./client/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  }
+}
